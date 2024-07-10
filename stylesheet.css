@@ -1,0 +1,116 @@
+.image1{
+    height: 50px;
+    width: 50px;
+}
+.heading{
+    font-size: 60px;
+    display:inline;
+    color: rgb(244, 56, 14);
+    background-color: violet;
+    font-weight: bold;
+    top: 0;
+}
+.navigation{
+    font-size: 30px;
+    width: 300px;
+    height: 655px;
+    background-color: violet;
+    margin: 0;
+    border: solid 1px;
+    position: relative;
+    top: 85px;
+    position: fixed;
+}
+.navigation a:hover{
+    background-color: black;
+    color: white;
+}
+.navigation a:active{
+    background-color: green;
+    color: white;
+}
+
+.list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    display:grid;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+}
+.image2{
+    height: 30px;
+    width: 30px;
+    vertical-align: baseline;
+}
+.div1{
+    background-color: violet;
+    border: solid black;
+}
+.span1{
+    position: absolute;
+    bottom: 0px;
+    border: solid 1px;
+}
+.list1{
+    border: solid 1px;
+}
+.search{
+    float:right;
+}
+.div2{
+    position: relative;
+    top: 100px;
+    bottom: 100px;
+    display: flex;
+    left: 300px;
+    display: block;
+    border: solid 5px;
+    width: 350px;
+    height: 150px;
+    background-color: aqua;
+}
+.div3{
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+}
+.div4{
+    position: relative;
+    top: 10px;
+    bottom: 500px;
+    display: flex;
+    display: block;
+    left: 300px;
+    border: solid 5px;
+    width:79%;
+    height:fit-content;
+}
+th{
+    border: solid;
+}
+td{
+    border: solid;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    text-wrap: wrap;
+}
+.div5{
+    display: flex;
+    display: grid;
+    position: relative;
+    top: 100px;
+}
+.div6{
+    display: flex;
+    position: relative;
+    right: 300px;
+    bottom: 100px;
+    justify-content: space-evenly;
+
+}
