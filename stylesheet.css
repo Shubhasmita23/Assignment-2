@@ -11,6 +11,7 @@
     top: 0;
 }
 .navigation{
+    overflow: hidden;
     font-size: 30px;
     width: 300px;
     height: 655px;
@@ -25,9 +26,9 @@
     background-color: black;
     color: white;
 }
-.navigation a:active{
-    background-color: green;
-    color: white;
+.navigation a.active{
+    background-color: yellow;
+    color: rgb(255, 255, 255);
 }
 
 .list{
@@ -73,6 +74,14 @@
     height: 150px;
     background-color: aqua;
 }
+.div8{
+    position: relative;
+    top: 90px;
+    left:300px;
+    border: solid 2px;
+    width: fit-content;
+    height: fit-content;
+}
 .div3{
     display: flex;
     width: 79%;
@@ -113,4 +122,18 @@ table{
     bottom: 100px;
     justify-content: space-evenly;
 
+}
+.div7{
+    position: relative;
+    top: 80px;
+    left: 300px;
+    width: 80%;
+}
+.button{
+    position: relative;
+    top: 200px;
+    font-size: large;
+    margin: 2px 4px;
+    color: white;
+    font-weight: bolder;
 }
