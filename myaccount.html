@@ -11,13 +11,44 @@
                 <h1 class="heading">WORKSPACE</h1>
                 <div class="search">
                     <form class="#">
-                        <input type="text" placeholder="Search In Customer" name="search">
+                        <input type="text" placeholder="Search In MyAccount" name="search">
                         <button><i class="fa search"></i>
                         </button>
                     </form>
                 </div>
             </div>
         </div>
+        <div class="div8">
+            <img src="images.jpg">
+            <span style="position: relative; top: 25px; left: 10px; ">&#x270E</span>
+         </div>
+        <form action="javascript: submitform()" onsubmit="return validate()" style="position: relative; top: 170px; left: 310px; border: 2px solid red; width: 500px; height: 450px; background-color: azure;">
+            <label for="name" style="font-weight: bold; font-size: larger">Name:</label></br>
+            <input type="text" class="form1" placeholder="John Doe" required><span style="position: relative; top: 6px; left: 10px; ">&#x270E</span><br>
+            <label for="Email" style="font-weight:bold; font-size: large; position: relative; top: 50px;">Email:</label></br>
+            <input type="email" class="form1" placeholder="example@gmail.com" style="position: relative; top:50px; "><span style="position: relative; top: 55px; left: 10px; ">&#x270E</span><br>
+            <label for="number" style="font-weight: bold; font-size: large; position: relative; top: 100px; ">Phone Number:</label><br>
+            <input type="number" class="form1" placeholder="913483748" style="position: relative; top:100px; "><span style="position: relative; top: 105px; left: 10px; ">&#x270E</span><br>
+            <label for="DOB"style="font-weight: bold; font-size: large; position: relative; top: 150px;">Date of Birth:</label><br>
+            <input type="date" class="form1" placeholder="July 16, 1999" required style="position: relative; top:150px; "><span style="position: relative; top: 150px; left: 10px; ">&#x270E</span><br>
+            <input class="button" type="submit" style="background-color: rgb(156, 215, 30);" value="SAVE">
+            <input class="button" type="reset" form="form1" style="background-color: red;" value="CANCEL">
+        </form>
+        <script type="text/javascript">
+            function validate(){
+                let ele=document.getElementById("name")
+                let validate=true
+                if(ele.value.length<10)
+                {
+                    window.alert("Name should be more than 10 characters!")
+                    validate=false;
+                }
+                return validate;
+            }
+            function submitform(){
+                window.alert("Form is submitted.")
+            }
+        </script>
         <div>
             <nav class="navigation">
                 <ul class="list">
@@ -30,7 +61,7 @@
                     <li class="list1">
                         <span>
                             <img src="images.jpg" class="image2">
-                            <a style="color:red; font-weight: bold; text-decoration: none;" class="active class1" href="customer.html" onclick="activeCustomer()" id="Customers">Customers</a>
+                            <a style="color:red; font-weight: bold; text-decoration: none;" class="" href="customer.html" onclick="activeCustomer()" id="Customers">Customers</a>
                         </span>
                     </li>
                     <li class="list1">
@@ -48,7 +79,7 @@
                     <li class="list1">
                     <div class="span1">
                         <img src="images.jpg" class="image2">
-                        <a style="color: red; font-weight: bold; text-decoration: none;" class="" href="myaccount.html" onclick="activeMyAccount()" id="MyAccount">My Account</a>
+                        <a style="color: red; font-weight: bold; text-decoration: none;" class="active class1" href="myaccount.html" onclick="activeMyAccount()" id="MyAccount">My Account</a>
                     </div>
                     </li>
                 </ul>
